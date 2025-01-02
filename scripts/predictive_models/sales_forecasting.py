@@ -7,7 +7,7 @@ data = pd.read_csv('../data/transformed/kevin_cookie_sales_cleaned.csv')
 
 data = data.rename(columns={'Sale_Date': 'ds', 'Sales': 'y'})  
 
-# Instantiate and fit the model
+
 model = Prophet()
 model.fit(data)
 
