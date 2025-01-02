@@ -11,13 +11,11 @@ data = data.rename(columns={'Sale_Date': 'ds', 'Sales': 'y'})
 model = Prophet()
 model.fit(data)
 
-# Make future predictions (e.g., 30 days ahead)
+
 future = model.make_future_dataframe(data, periods=30)
 forecast = model.predict(future)
 
-# Plot the forecast (you can save this as an image or use it in a report)
 model.plot(forecast)
 
-# Save the forecasted data to a CSV
 forecast.to_csv('../data/transformed/forecasted_sales.csv', index=False)
 print("Sales forecast generated and saved.")
