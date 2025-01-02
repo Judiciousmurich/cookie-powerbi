@@ -5,7 +5,7 @@ data = pd.read_csv('../data/raw/kevin_cookie_sales.csv')
 
 # Example data cleaning: Remove duplicates, handle missing values, etc.
 data = data.drop_duplicates()
-data = data.fillna(0)  # Replace missing values with 0
+data = data.fillna(0) 
 
 # Example: Convert date column to datetime
 data['Sale_Date'] = pd.to_datetime(data['Sale_Date'])
