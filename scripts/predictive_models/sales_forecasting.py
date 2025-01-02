@@ -5,7 +5,7 @@ from fbprophet import Prophet
 data = pd.read_csv('../data/transformed/kevin_cookie_sales_cleaned.csv')
 
 # Prepare the data for Prophet (ensure the columns are named correctly)
-data = data.rename(columns={'Sale_Date': 'ds', 'Sales': 'y'})  # Prophet requires 'ds' for dates and 'y' for values
+data = data.rename(columns={'Sale_Date': 'ds', 'Sales': 'y'})  
 
 # Instantiate and fit the model
 model = Prophet()
