@@ -1,4 +1,4 @@
-// Simple Power BI custom visual template using the Power BI custom visual SDK
+
 let powerbi = require('powerbi-visuals-tools');
 
 const myVisual = {
