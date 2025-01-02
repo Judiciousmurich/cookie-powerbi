@@ -3,7 +3,7 @@ import pandas as pd
 # Load data
 data = pd.read_csv('../data/raw/kevin_cookie_sales.csv')
 
-# Example data cleaning: Remove duplicates, handle missing values, etc.
+
 data = data.drop_duplicates()
 data = data.fillna(0) 
 
