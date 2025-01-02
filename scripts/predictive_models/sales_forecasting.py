@@ -4,7 +4,7 @@ from fbprophet import Prophet
 # Load the cleaned sales data
 data = pd.read_csv('../data/transformed/kevin_cookie_sales_cleaned.csv')
 
-# Prepare the data for Prophet (ensure the columns are named correctly)
+
 data = data.rename(columns={'Sale_Date': 'ds', 'Sales': 'y'})  
 
 # Instantiate and fit the model
